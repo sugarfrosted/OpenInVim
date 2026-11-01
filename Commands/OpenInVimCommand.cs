@@ -110,7 +110,7 @@ namespace OpenInVim
                                                    //process.StartInfo.Arguments = $"\"+call cursor({line},{col})\" \"{doc.FilePath}\"";
                 files = files.Select(f => $"\"{f}\"").ToList();
                 process.StartInfo.Arguments = $"{args} {string.Join(" ", files)}";
-                process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                process.StartInfo.WindowStyle = settings.ProcessWindowStyle;
                 process.Start();
             }
             catch (Exception ex)

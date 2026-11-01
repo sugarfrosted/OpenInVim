@@ -1,5 +1,6 @@
 ﻿using Community.VisualStudio.Toolkit;
 using System.ComponentModel;
+using System.Diagnostics;
 
 namespace OpenInVim
 {
@@ -23,5 +24,11 @@ namespace OpenInVim
         [Description("Arguments to pass to Vim. $line$ and $col$ will be replaced by the current line and column number respectively.")]
         [DefaultValue("+call cursor($line$, $col$)")]
         public string UserArguments { get; set; } = "+call cursor($line$, $col$)";
+
+        [Category("Behavior")]
+        [DisplayName("Gvim window behavior")]
+        [Description("The way to open the window")]
+        [DefaultValue(ProcessWindowStyle.Normal)]
+        public ProcessWindowStyle ProcessWindowStyle { get; set; }
     }
 }
