@@ -1,0 +1,52 @@
+# ==========================================
+# Visual Studio Extension (VSIX) Specifics
+# ==========================================
+*.vsix
+*.vsixmanifest.deleteme
+*.vsixmanifest.designer.cs
+
+# Extensibility / SDK logging
+*.activitylog.xml
+*.vshost.exe
+*.vshost.exe.config
+
+# Component Cache and Test Repositories generated during extension debugging
+*.pkgdef
+*.pkgdef.cache
+*.vstman
+
+# The Experimental Instance (Hive) data 
+# (Often generated if you redirect the experimental hive to your local directory)
+*.vshive
+ExperimentalHive/
+TestResults/
+
+# ==========================================
+# Standard Visual Studio & .NET Core / Framework
+# ==========================================
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bld/
+[Log]s/
+
+# Visual Studio temporary files, settings, and caches
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Roslyn Analyzers and Cache
+.vs-code-analysis/
+
+# ==========================================
+# Package Management
+# ==========================================
+# NuGet Packages
+*.nupkg
+packages/
